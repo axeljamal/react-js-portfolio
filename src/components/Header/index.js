@@ -1,14 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./style.css";
-import { FaBars, FaTimes } from "react-icons/fa";
 
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 function Header() {
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
   return (
-    <nav className="navbar navbar-expand navbar-light bg-light">
+    <nav className="navbar navbar-expand text-center">
       <div className="site-header left-menu">
         <ul className="navbar-nav nv-left">
           <li className="nav-item">
@@ -19,28 +16,9 @@ function Header() {
                 isActive ? "nav-link active" : "nav-link"
               }
             >
-              Home
+              HOME
             </NavLink>
           </li>
-          <li className="nav-item">
-            <NavLink
-              to="/about"
-              className={({ isActive }) =>
-                isActive ? "nav-link active" : "nav-link"
-              }
-            >
-              About
-            </NavLink>
-          </li>
-        </ul>
-      </div>
-
-      <Link className="navbar-brand" to="/">
-        AXEL JAMAL
-      </Link>
-
-      <div className="site-header right-menu">
-        <ul className="navbar-nav">
           <li className="nav-item">
             <NavLink
               to="/projects"
@@ -48,7 +26,27 @@ function Header() {
                 isActive ? "nav-link active" : "nav-link"
               }
             >
-              Projects
+              PROJECTS
+            </NavLink>
+          </li>
+        </ul>
+      </div>
+      <div className="site-header brand">
+        <Link className="navbar-brand" to="/">
+          AXEL JAMAL
+        </Link>
+      </div>
+
+      <div className="site-header right-menu">
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            >
+              ABOUT
             </NavLink>
           </li>
           <li className="nav-item">
@@ -58,13 +56,10 @@ function Header() {
                 isActive ? "nav-link active" : "nav-link"
               }
             >
-              Contact
+              CONTACT
             </NavLink>
           </li>
         </ul>
-      </div>
-      <div className="hamburger" onClick={handleClick}>
-        {click ? <FaTimes /> : <FaBars />}
       </div>
     </nav>
   );
