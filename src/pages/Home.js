@@ -4,10 +4,11 @@ import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
 
+import homeBg from "../assets/images/Hero.JPG";
 function Home() {
   return (
     <div>
-      <Hero backgroundImage="">
+      <Hero style={homeBg}>
         <h1>Axel Jamal</h1>
         <h2>Front-End Developer + Artist</h2>
       </Hero>
