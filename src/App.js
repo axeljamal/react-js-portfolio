@@ -1,6 +1,5 @@
 import React from "react";
-
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./index.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -12,7 +11,7 @@ import Wrapper from "./components/Wrapper";
 
 function App() {
   return (
-    <Router>
+    <>
       <Header />
       <Wrapper>
         <Routes>
@@ -23,7 +22,7 @@ function App() {
         </Routes>
       </Wrapper>
       <Footer />
-    </Router>
+    </>
   );
 }
 
