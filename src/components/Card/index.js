@@ -8,15 +8,15 @@ function Card(props) {
   return (
     <Wrapper>
       <div className="project-card">
-        <img alt={props.name} src={`/images/${props.image}`} />
+        <img alt={props.name} src={`../assets/images/${props.image}`} />
         <h2 className="project-title"> {props.name} </h2>
         <div className="pro-details">
           <p> {props.details} </p>
           <div className="pro-btns">
-            <NavLink to={props.pageLink} className="btn">
+            <NavLink to={props.pageLink} className="button-56">
               View
             </NavLink>
-            <NavLink to={props.sourceLink} className="btn">
+            <NavLink to={props.sourceLink} className="button-56">
               Source
             </NavLink>
           </div>

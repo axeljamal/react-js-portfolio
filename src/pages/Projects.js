@@ -3,21 +3,14 @@ import Hero2 from "../components/Hero2";
 import Card from "../components/Card";
 import projectsData from "../projectsData.json";
 import Wrapper from "../components/Wrapper";
+import "../index.css";
 
 const Projects = () => {
   return (
     <div>
       <Wrapper>
         <Hero2 heading="PROJECTS" text="" />
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
-            gap: "10px",
-            marginTop: "10vh",
-            padding: "10px",
-          }}
-        >
+        <div className="workContainer">
           {projectsData.map((project) => (
             <Card
               key={project.name}

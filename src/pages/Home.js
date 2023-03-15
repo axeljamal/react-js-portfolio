@@ -8,7 +8,12 @@ import homeBg from "../assets/images/Hero.JPG";
 function Home() {
   return (
     <div>
-      <Hero style={homeBg}>
+      <Hero>
+        <img
+          className="object-cover object-center bg-none rounded-full shadow-xl transition-colors-shadow duration-700 hover:shadow-indigo-500/70 hover:opacity-60"
+          alt="hero"
+          src={homeBg}
+        />
         <h1>Axel Jamal</h1>
         <h2>Front-End Developer + Artist</h2>
       </Hero>
