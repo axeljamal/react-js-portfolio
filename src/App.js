@@ -7,12 +7,13 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
-import Header from "./components/Header";
+
+import NavPanel from "./components/NavPanel";
 
 function App() {
   return (
     <>
-      <Header />
+      <NavPanel />
       <Wrapper>
         <Routes>
           <Route path="/" element={<Home />} />

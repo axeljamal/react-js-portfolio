@@ -1,0 +1,104 @@
+.panel-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  padding: 1rem;
+  position: fixed;
+  /* position of navbar */
+  width: 100%;
+  height: 90px;
+  z-index: 10;
+}
+
+.panel-header-bg {
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.content {
+  color: var(--dark);
+}
+
+.content-light {
+  color: var(--dark);
+}
+
+.panel-menu {
+  display: flex;
+}
+
+.panel-menu li {
+  padding: 0 1rem;
+}
+
+.panel-header ul li:hover a {
+  color: var(--bright);
+}
+
+.panel-menu li a {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: var(--secondary);
+}
+
+.content:hover,
+.ex:hover {
+  color: var(--bright);
+}
+
+@media screen and (max-width: 1040px) {
+  .panel-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgba(203, 204, 203, 0.95);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    transition: 0.3s;
+  }
+
+  .panel-menu.active {
+    top: -1500%;
+  }
+
+  .panel-menu li {
+    padding: 1rem 0;
+  }
+
+  .panel-menu li a {
+    font-size: 2rem;
+    color: var(--light);
+  }
+
+  .hamburger {
+    position: absolute;
+    right: 30px;
+
+    display: flex;
+    justify-content: end;
+  }
+
+  .ex {
+    position: absolute;
+    right: 30px;
+
+    display: flex;
+    justify-content: end;
+  }
+  .content.logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  }
+}

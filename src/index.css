@@ -1,18 +1,4 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Rampart+One&display=swap");
 
 :root {
   --dark: rgb(21, 3, 27);
@@ -24,7 +10,7 @@ code {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Rampart One", "Quicksand", sans-serif, cursive;
 }
 
 body {
@@ -62,6 +48,10 @@ ul {
   padding: 10px;
 }
 
+NavPanel {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .btn {
     padding: 13px 50px 13px;
@@ -71,5 +61,11 @@ ul {
 @media screen and (max-width: 800px) {
   .workContainer {
     grid-template-columns: 1fr;
+  }
+  NavPanel {
+    display: initial;
+  }
+  Header {
+    display: hidden;
   }
 }
