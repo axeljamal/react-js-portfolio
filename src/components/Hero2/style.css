@@ -39,6 +39,7 @@
 .hero2 .heading h1 {
   font-size: 4rem;
   padding: 0.6rem 0 1.5rem;
+  color: var(--dark);
 }
 
 .hero .heading p {

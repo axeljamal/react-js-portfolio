@@ -1,10 +1,10 @@
 import "./style.css";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
 import { FaBars, FaTimes } from "react-icons/fa";
+import logo from "../../assets/images/avatar.png";
 
-const NavPanel = () => {
+const Header = () => {
   // event listener to take user to page they clicked on
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
@@ -47,20 +47,13 @@ const NavPanel = () => {
           </Link>
         </li>
 
-        <Link to="/">
-          <h1
-            className={
-              textColor ? "content logo content-light" : "content logo"
-            }
-          >
-            Portfolio
-          </h1>
-        </Link>
-
+        <div className="logo-container">
+          <img className="logo" src={logo} alt="avatar" />
+        </div>
         <li>
           <Link
             className={textColor ? "content content-light" : "content"}
-            to="/About"
+            to="/"
           >
             About Me
           </Link>
@@ -86,4 +79,4 @@ const NavPanel = () => {
   );
 };
 
-export default NavPanel;
+export default Header;

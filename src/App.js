@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import "./index.css";
+import Header from "./components/Header";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
@@ -8,12 +9,10 @@ import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 
-import NavPanel from "./components/NavPanel";
-
 function App() {
   return (
     <>
-      <NavPanel />
+      <Header />
       <Wrapper>
         <Routes>
           <Route path="/" element={<Home />} />

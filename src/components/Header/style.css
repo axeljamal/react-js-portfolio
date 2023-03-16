@@ -2,8 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  top: 40px;
   left: 0;
-  padding: 1rem;
+  padding: 0;
   position: fixed;
   /* position of navbar */
   width: 100%;
@@ -12,7 +13,7 @@
 }
 
 .panel-header-bg {
-  background-color: transparent;
+  background-color: var(--light);
   transition: 0.5s;
 }
 
@@ -52,6 +53,26 @@
   color: var(--bright);
 }
 
+.content {
+  text-decoration: none;
+}
+
+.logo-container {
+  background-color: rgb(255, 119, 0);
+  border-radius: 3px;
+  stroke-width: 50;
+  stroke: black;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  height: 160px;
+}
+
 @media screen and (max-width: 1040px) {
   .panel-menu {
     display: flex;
@@ -62,7 +83,7 @@
     height: 100vh;
     background: rgba(203, 204, 203, 0.95);
     position: absolute;
-    top: 0;
+    top: -50%;
     left: 0;
     z-index: -3;
     transition: 0.3s;
@@ -96,7 +117,7 @@
     display: flex;
     justify-content: end;
   }
-  .content.logo {
+  .logo-container {
     position: fixed;
     top: 20px;
     left: 20px;
