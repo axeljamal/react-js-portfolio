@@ -1,8 +1,8 @@
 .panel-header {
   display: flex;
   justify-content: center;
-  align-items: center;
-  top: 40px;
+  align-items: bottom;
+  top: 0px;
   left: 0;
   padding: 0;
   position: fixed;
@@ -42,6 +42,12 @@
   font-weight: 500;
 }
 
+.li {
+  display: flex;
+  align-items: end;
+  top: 30px;
+}
+
 .hamburger {
   display: none;
   font-size: 2rem;
@@ -58,19 +64,20 @@
 }
 
 .logo-container {
-  background-color: rgb(255, 119, 0);
+  background-color: rgb(233, 109, 1);
   border-radius: 3px;
   stroke-width: 50;
   stroke: black;
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .logo {
-  height: 160px;
+  height: 120px;
 }
 
 @media screen and (max-width: 1040px) {

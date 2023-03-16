@@ -27,13 +27,13 @@ const Header = () => {
   return (
     <div className={color ? "panel-header panel-header-bg" : "panel-header"}>
       <ul
-        className={click ? "panel-menu active" : "panel-menu "}
+        className={click ? "panel-menu active" : "panel-menu"}
         onClick={handleClick}
       >
         <li>
           <Link
             className={textColor ? "content content-light" : "content"}
-            to="/axeljamal.github.io/react-js-portfolio/"
+            to="/"
           >
             Home
           </Link>
