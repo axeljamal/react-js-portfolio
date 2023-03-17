@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./index.css";
 import Header from "./components/Header";
 import Home from "./pages/Home";
@@ -11,18 +11,20 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <Router>
+      <BrowserRouter basename="/react-js-portfolio">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/*" element={<Home />} />
         </Routes>
         <Footer />
-      </Router>
+      </BrowserRouter>
     </>
   );
 }
-
+console.log(process.env.PUBLIC_URL);
 export default App;
