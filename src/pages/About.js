@@ -1,20 +1,17 @@
 import React from "react";
 import Hero from "../components/Hero";
-import Header from "../components/Header";
-import { Routes } from "react-router-dom";
+import about from "./../assets/images/about-me.png";
 
-const About = () => {
+function About() {
   return (
     <div>
-      <Header />
-      <Routes>
-        <Hero>
-          <h1>Axel Jamal</h1>
-          <h2>Front-End Developer + Artist</h2>
-        </Hero>
-      </Routes>
+      <Hero>
+        <img src={about} className="img-fluid" alt="..."></img>
+        <h1>Axel Jamal</h1>
+        <h2>Front-End Developer + Artist</h2>
+      </Hero>
     </div>
   );
-};
+}
 
 export default About;

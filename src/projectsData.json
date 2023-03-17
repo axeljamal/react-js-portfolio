@@ -1,5 +1,20 @@
 [
     {
+        "name": "Team Generator",
+        "image": "https://user-images.githubusercontent.com/119621308/223402724-05682ffb-a744-417d-bb66-dd37e3e257c7.png",
+        "details": "Test-Driven Development: Team Profile Generator",
+        "pageLink": "https://axeljamal.github.io/tdd-oop-team-profile-generator/",
+        "sourceLink": "https://github.com/axeljamal/tdd-oop-team-profile-generator"
+    },
+
+    {
+        "name": "Work Day Scheduler",
+        "image": "https://user-images.githubusercontent.com/119621308/216040766-6781b96a-b563-4a66-bfee-dd857399ab8a.png",
+        "details": "Third-Party APIs: Daily Planner App",
+        "pageLink": "https://axeljamal.github.io/api-js-daily-planner-app/",
+        "sourceLink": "https://github.com/axeljamal/api-js-daily-planner-app"
+    },
+    {
         "name": "Weather Dasboard",
         "image": "https://user-images.githubusercontent.com/119621308/221939490-22b44b50-fb0f-4ca4-80a1-d431ebd5c502.png",
         "details": "Server APIs: Weather Dashboard Server APIs.",
@@ -13,13 +28,7 @@
         "pageLink": "https://axeljamal.github.io/api-js-code-quiz/index.html",
         "sourceLink": "https://github.com/axeljamal/api-js-code-quiz"
     },
-    {
-        "name": "Work Day Scheduler",
-        "image": "https://user-images.githubusercontent.com/119621308/216040766-6781b96a-b563-4a66-bfee-dd857399ab8a.png",
-        "details": "Third-Party APIs: Daily Planner App",
-        "pageLink": "https://axeljamal.github.io/api-js-daily-planner-app/",
-        "sourceLink": "https://github.com/axeljamal/api-js-daily-planner-app"
-    },
+
     {
         "name": "Password Generator",
         "image": "https://user-images.githubusercontent.com/119621308/223720649-57519794-3a22-41cc-8fba-6c0c52312c23.png",
@@ -33,12 +42,5 @@
         "details": "Working with ES6 & Node.js: Professional README Generator",
         "pageLink": "https://github.com/axeljamal/npm-es6-readme-generator",
         "sourceLink": "https://github.com/axeljamal/npm-es6-readme-generator"
-    },
-    {
-        "name": "Team Generator",
-        "image": "https://user-images.githubusercontent.com/119621308/223402724-05682ffb-a744-417d-bb66-dd37e3e257c7.png",
-        "details": "Test-Driven Development: Team Profile Generator",
-        "pageLink": "https://axeljamal.github.io/tdd-oop-team-profile-generator/",
-        "sourceLink": "https://github.com/axeljamal/tdd-oop-team-profile-generator"
     }
 ]
