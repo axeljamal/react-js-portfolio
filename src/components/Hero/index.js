@@ -7,7 +7,7 @@ function Hero() {
   return (
     <div className="hero">
       <div className="mask">
-        <img className="img-fluid main-img" src={MainImg} alt="IntroImg" />
+        <img className="intro-img main-img" src={MainImg} alt="IntroImg" />
       </div>
       <div className="content">
         <p>Axel Jamal</p>

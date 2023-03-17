@@ -1,13 +1,16 @@
 import React from "react";
 import Skills from "../components/Skills";
 import Bio from "../components/Bio";
+import Wrapper from "../components/Wrapper";
 
 function About() {
   return (
-    <div>
-      <Bio />
-      <Skills />
-    </div>
+    <Wrapper>
+      <div>
+        <Bio />
+        <Skills />
+      </div>
+    </Wrapper>
   );
 }
 

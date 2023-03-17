@@ -123,13 +123,12 @@
   .ex {
     position: absolute;
     right: 30px;
-
     display: flex;
     justify-content: end;
   }
   .logo-container {
     position: fixed;
-    top: 50px;
-    left: 10px;
+    top: 35px;
+    left: 7px;
   }
 }
