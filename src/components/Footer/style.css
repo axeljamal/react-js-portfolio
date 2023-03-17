@@ -1,6 +1,6 @@
 .footer {
   min-height: 100px;
-  background: #e5e5e5;
+  background: var(--brighter);
   position: relative;
 }
 
@@ -12,5 +12,19 @@
   left: 0;
   right: 0;
   padding: 3px;
-  background: #b8b8b8;
+  background: var(--light);
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons {
+  margin-top: 1rem;
+  color: var(--dark);
+  font-size: 40px;
+  margin-right: 2rem;
 }
