@@ -35,7 +35,7 @@ const Header = () => {
             className={textColor ? "content content-light" : "content"}
             to="/"
           >
-            Home
+            HOME
           </Link>
         </li>
         <li>
@@ -43,7 +43,7 @@ const Header = () => {
             className={textColor ? "content content-light" : "content"}
             to="/Projects"
           >
-            Projects
+            PROJECTS
           </Link>
         </li>
 
@@ -55,7 +55,7 @@ const Header = () => {
             className={textColor ? "content content-light" : "content"}
             to="/"
           >
-            About Me
+            ABOUT
           </Link>
         </li>
 
@@ -64,7 +64,7 @@ const Header = () => {
             className={textColor ? "content content-light" : "content"}
             to="/Contact"
           >
-            Contact
+            CONTACT
           </Link>
         </li>
       </ul>
