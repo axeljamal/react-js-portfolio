@@ -3,6 +3,7 @@
 :root {
   --dark: rgb(21, 3, 27);
   --light: #fffef3;
+  --brighter: rgb(255, 197, 6);
   --bright: rgb(233, 109, 1);
 }
 

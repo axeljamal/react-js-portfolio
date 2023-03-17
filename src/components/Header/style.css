@@ -35,7 +35,7 @@
 }
 
 .panel-header ul li:hover a {
-  color: var(--bright);
+  color: var(--brighter);
 }
 
 .panel-menu li a {
@@ -66,7 +66,7 @@
 
 .logo-container {
   margin-top: -30px;
-  background-color: rgb(233, 109, 1);
+  background-color: var(--brighter);
   border-radius: 3px;
   stroke-width: 50;
   stroke: black;
