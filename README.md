@@ -17,7 +17,7 @@
   
   
   ## Screenshot
-  <img width="1678" alt="Portfolio" src="https://user-images.githubusercontent.com/119621308/225804929-970ead3c-b293-47a2-8503-60de8f2aeeb1.png">
+  <img width="1678" alt="Portfolio" src="https://user-images.githubusercontent.com/119621308/225804929-970ead3c-b293-47a2-8503-60de8f2aeeb1.png"> (https://axeljamal.github.io/react-js-portfolio/)
 
   
   
