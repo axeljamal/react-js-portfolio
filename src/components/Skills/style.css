@@ -3,6 +3,7 @@
   padding-bottom: 5rem;
   background-color: var(--light);
   color: var(--dark);
+  padding-bottom: 20vh;
 }
 
 .bottom h1 {

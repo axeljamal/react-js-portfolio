@@ -116,12 +116,13 @@ textarea:not(:placeholder-shown) {
     margin: 0;
   }
 
-  /* .formContainer {
+  .formContainer {
     align-items: center;
     display: flex;
     flex-direction: column;
     padding: 0;
-  } */
+    width: 30vh;
+  }
 
   form {
     width: 100%;
