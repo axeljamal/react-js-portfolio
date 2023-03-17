@@ -13,7 +13,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="social">
-        <a href="axeltaj@gmail.com" rel="noreferrer" target="_blank">
+        <a href="mailto:axeltaj@gmail.com" rel="noreferrer" target="_blank">
           <FontAwesomeIcon className="icons" icon={faEnvelope} />
         </a>
 
@@ -35,7 +35,7 @@ function Footer() {
           <FontAwesomeIcon className="icons" icon={faInstagram} />
         </a>
 
-        <a href="+447985447179" rel="noreferrer" target="_blank">
+        <a href="tel:07985447179" rel="noreferrer" target="_blank">
           <FontAwesomeIcon className="icons" icon={faMobilePhone} />
         </a>
       </div>

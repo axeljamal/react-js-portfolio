@@ -146,6 +146,7 @@ textarea:not(:placeholder-shown) {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Quicksand";
   }
 
   .contactLeft,
