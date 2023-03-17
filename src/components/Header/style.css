@@ -98,8 +98,12 @@
     transition: 0.3s;
   }
 
+  .panel-menu {
+    top: -3500%;
+  }
+
   .panel-menu.active {
-    top: -1500%;
+    top: -40%;
   }
 
   .panel-menu li {

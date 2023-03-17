@@ -25,11 +25,11 @@ const Header = () => {
   window.addEventListener("scroll", changeColor);
 
   return (
-    <div className={color ? "panel-header panel-header-bg" : "panel-header"}>
-      <ul
-        className={click ? "panel-menu active" : "panel-menu"}
-        onClick={handleClick}
-      >
+    <div
+      className={color ? "panel-header panel-header-bg" : "panel-header"}
+      onClick={handleClick}
+    >
+      <ul className={click ? "panel-menu active" : "panel-menu"}>
         <li>
           <Link
             className={textColor ? "content content-light" : "content"}
@@ -70,9 +70,9 @@ const Header = () => {
       </ul>
       <div className="hamburger" onClick={handleClick}>
         {click ? (
-          <FaBars size={20} style={{ color: "#ggg" }} />
-        ) : (
           <FaTimes size={20} style={{ color: "#ggg" }} />
+        ) : (
+          <FaBars size={20} style={{ color: "#ggg" }} />
         )}
       </div>
     </div>

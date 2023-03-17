@@ -5,12 +5,12 @@ import Wrapper from "../components/Wrapper";
 
 function About() {
   return (
-    <Wrapper>
-      <div>
+    <div>
+      <Wrapper>
         <Bio />
         <Skills />
-      </div>
-    </Wrapper>
+      </Wrapper>
+    </div>
   );
 }
 
