@@ -8,7 +8,7 @@ function Card(props) {
   return (
     <Wrapper>
       <div className="project-card">
-        <div>
+        <div className="img-container">
           <img alt={props.name} src={props.image} />
         </div>
         <h2 className="project-title"> {props.name} </h2>

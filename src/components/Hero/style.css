@@ -50,9 +50,7 @@
 }
 
 a.btn {
-  font-size: 3rem;
-  display: flex;
-  justify-content: center;
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 640px) {

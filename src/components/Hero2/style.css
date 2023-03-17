@@ -31,7 +31,7 @@
 .hero2 .heading {
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 20%;
+  top: 25%;
   left: 50%;
   text-align: center;
 }

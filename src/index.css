@@ -41,7 +41,7 @@ ul {
 }
 
 .workContainer {
-  background-color: var(--bright);
+  background-color: transparent;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;

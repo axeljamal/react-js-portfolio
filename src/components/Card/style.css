@@ -13,13 +13,13 @@
 }
 
 .project-card {
-  background: var(--secondary);
+  background: transparent;
   padding: 1.2rem 1rem;
-  background-color: var(--light);
+  background-color: transparent;
   border-radius: 10px;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
-  height: 100%;
+  max-height: 100%;
 }
 
 .project-card:hover {
@@ -27,8 +27,14 @@
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+.img-container {
+  max-height: 70px;
+  margin-bottom: 60%;
+}
 .project-card img {
+  object-fit: cover;
   width: 100%;
+  border: 1px solid var(--dark);
 }
 
 .pro-details p {
@@ -36,7 +42,7 @@
   text-align: center;
   font-family: "Quicksand", sans-serif;
   font-size: 1.1rem;
-  text-align: justify;
+  text-align: center;
 }
 
 .pro-btns {
@@ -92,7 +98,7 @@
   left: 0;
   width: 100%;
   position: absolute;
-  top: -2px;
+  top: -1px;
   transform: translate(8px, 8px);
   transition: transform 0.2s ease-out;
   z-index: -1;
