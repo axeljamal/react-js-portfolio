@@ -53,7 +53,7 @@ const Header = () => {
         <li>
           <Link
             className={textColor ? "content content-light" : "content"}
-            to="/"
+            to="/About"
           >
             ABOUT
           </Link>
