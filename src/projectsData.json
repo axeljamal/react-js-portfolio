@@ -8,11 +8,27 @@
     },
 
     {
+        "name": "Sojourn",
+        "image": "https://user-images.githubusercontent.com/119621308/226062894-98ce4f5e-d516-4b85-8ef0-7d3e61e3d95b.jpeg",
+        "details": "Sojourn is a Traveller website app created with my team",
+        "pageLink": "https://babyleezus.github.io/travel-concierge-api-project",
+        "sourceLink": "https://github.com/axeljamal/travel-concierge-api-project"
+    },
+
+    {
         "name": "Work Day Scheduler",
         "image": "https://user-images.githubusercontent.com/119621308/216040766-6781b96a-b563-4a66-bfee-dd857399ab8a.png",
         "details": "Third-Party APIs: Daily Planner App",
         "pageLink": "https://axeljamal.github.io/api-js-daily-planner-app/",
         "sourceLink": "https://github.com/axeljamal/api-js-daily-planner-app"
+    },
+
+    {
+        "name": "JavaScript Quiz",
+        "image": "https://user-images.githubusercontent.com/119621308/219744525-035e38f9-c4d2-416b-b377-644522cce3ff.png",
+        "details": "JavaScript Quiz built with JavaScript, HTML, CSS.",
+        "pageLink": "https://axeljamal.github.io/api-js-code-quiz/index.html",
+        "sourceLink": "https://github.com/axeljamal/api-js-code-quiz"
     },
     {
         "name": "Weather Dasboard",
@@ -21,13 +37,6 @@
         "pageLink": "https://axeljamal.github.io/s-api-js-weather-dashboard/",
         "sourceLink": "https://github.com/axeljamal/s-api-js-weather-dashboard"
     },
-    {
-        "name": "JavaScript Quiz",
-        "image": "https://user-images.githubusercontent.com/119621308/219744525-035e38f9-c4d2-416b-b377-644522cce3ff.png",
-        "details": "JavaScript Quiz built with JavaScript, HTML, CSS.",
-        "pageLink": "https://axeljamal.github.io/api-js-code-quiz/index.html",
-        "sourceLink": "https://github.com/axeljamal/api-js-code-quiz"
-    },
 
     {
         "name": "Password Generator",
@@ -35,12 +44,6 @@
         "details": "Module 5 Challenge: Password Generator",
         "pageLink": "https://axeljamal.github.io/js-password-generator/",
         "sourceLink": "https://github.com/axeljamal/js-password-generator"
-    },
-    {
-        "name": "README Generator",
-        "image": "https://github.com/axeljamal/npm-es6-readme-generator/blob/main/generated-readme/README.md",
-        "details": "Working with ES6 & Node.js: Professional README Generator",
-        "pageLink": "https://github.com/axeljamal/npm-es6-readme-generator",
-        "sourceLink": "https://github.com/axeljamal/npm-es6-readme-generator"
     }
+
 ]

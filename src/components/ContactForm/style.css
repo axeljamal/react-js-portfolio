@@ -152,4 +152,52 @@ textarea:not(:placeholder-shown) {
   .contactRight {
     padding-bottom: 3rem;
   }
+  input {
+    height: 25px;
+  }
+
+  /* Move the label element up to align it with the textarea */
+  label[for="message"] {
+    position: relative;
+    bottom: 35px;
+  }
+
+  /* Hide the placeholder when the textarea is not empty */
+  textarea:not(:placeholder-shown) {
+    border-color: var(--dark);
+    /* change the border color to indicate the textarea is not empty */
+  }
+
+  /* Show the placeholder on the bottom border */
+  textarea::placeholder {
+    font-family: "Quicksand";
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: var(--dark);
+  }
+
+  /* Show the placeholder inside the input elements */
+  input::placeholder {
+    position: absolute;
+    bottom: 4px;
+    left: 10px;
+    color: var(--dark);
+  }
+
+  /* Add spacing between the input elements */
+  input + input,
+  textarea + input,
+  input + textarea {
+    font-family: "Quicksand";
+    margin-top: 10px;
+  }
+
+  /* Hide the placeholder when the input elements are not empty */
+  input:not(:placeholder-shown),
+  textarea:not(:placeholder-shown) {
+    font-family: "Quicksand";
+    border-color: var(--bright);
+    /* change the border color to indicate the input elements are not empty */
+  }
 }
