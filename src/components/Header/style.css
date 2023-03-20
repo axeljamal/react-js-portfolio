@@ -108,6 +108,8 @@
 
   .panel-menu li {
     padding: 1rem 0;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .panel-menu li a {

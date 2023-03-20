@@ -87,13 +87,13 @@ function ContactForm() {
 
       <div className="contactEnd">
         <div className="contactMe">
-          <h2>Email</h2>
-          <a className="email" href="mailto:axeltaj@gmail.com">
+          <h2>Email:</h2>
+          <a className="email" href="mailto:axeltaj@gmail.com" target="blank">
             axeltaj@gmail.com
           </a>
         </div>
         <div className="contactMe">
-          <h2>Phone</h2>
+          <h2>Phone:</h2>
           <a className="email" href="tel:07985447179">
             +44 798 544 7179
           </a>
