@@ -28,3 +28,6 @@
   font-size: 40px;
   margin-right: 2rem;
 }
+.social .icons:hover {
+  color: var(--light);
+}

@@ -1,5 +1,5 @@
 .bottom {
-  margin-top: 20px;
+  margin-top: 0;
   padding-top: 20vh;
   padding-bottom: 5rem;
   background-color: var(--light);
@@ -8,6 +8,7 @@
 }
 
 .bottom h1 {
+  margin-top: 20px;
   color: var(--dark);
   text-align: center;
   margin-bottom: 12px;

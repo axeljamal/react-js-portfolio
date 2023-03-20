@@ -9,10 +9,6 @@
   flex-direction: column;
 }
 
-.contactRight .contactMe {
-  font-family: "Quicksand";
-}
-
 .formContainer {
   font-family: "Quicksand";
   padding-left: 0;
@@ -48,52 +44,7 @@ input {
   height: 25px;
 }
 
-/* Move the label element up to align it with the textarea */
-label[for="message"] {
-  position: relative;
-  bottom: 35px;
-}
-
-/* Hide the placeholder when the textarea is not empty */
-textarea:not(:placeholder-shown) {
-  border-color: var(--dark);
-  /* change the border color to indicate the textarea is not empty */
-}
-
-/* Show the placeholder on the bottom border */
-textarea::placeholder {
-  font-family: "Quicksand";
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  color: var(--dark);
-}
-
-/* Show the placeholder inside the input elements */
-input::placeholder {
-  position: absolute;
-  bottom: 4px;
-  left: 10px;
-  color: var(--dark);
-}
-
-/* Add spacing between the input elements */
-input + input,
-textarea + input,
-input + textarea {
-  font-family: "Quicksand";
-  margin-top: 10px;
-}
-
-/* Hide the placeholder when the input elements are not empty */
-input:not(:placeholder-shown),
-textarea:not(:placeholder-shown) {
-  font-family: "Quicksand";
-  border-color: var(--bright);
-  /* change the border color to indicate the input elements are not empty */
-}
-
-.contactRight {
+.contactEnd {
   margin-top: 50px;
   display: flex;
   flex-direction: row;
@@ -101,13 +52,32 @@ textarea:not(:placeholder-shown) {
   align-items: start;
   width: 50%;
   line-height: 1.5;
-  font-family: "Quicksand";
+}
+
+.contactMe {
+  color: var(--dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactMe:hover {
+  color: var(--bright);
+  outline: 0;
 }
 
 .submit-btn {
   display: flex;
   flex-direction: row;
   width: 200px;
+}
+
+.success {
+  text-align: center;
+  font-family: "Quicksand";
+  color: var(--bright);
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 1040px) {
@@ -132,9 +102,10 @@ textarea:not(:placeholder-shown) {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
-  .contactRight {
+  .contactEnd {
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -142,7 +113,7 @@ textarea:not(:placeholder-shown) {
     font-family: "Quicksand";
   }
 
-  .contactRight h2 {
+  .contactEnd h2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,55 +121,10 @@ textarea:not(:placeholder-shown) {
   }
 
   .contactLeft,
-  .contactRight {
+  .contactEnd {
     padding-bottom: 3rem;
   }
   input {
     height: 25px;
-  }
-
-  /* Move the label element up to align it with the textarea */
-  label[for="message"] {
-    position: relative;
-    bottom: 35px;
-  }
-
-  /* Hide the placeholder when the textarea is not empty */
-  textarea:not(:placeholder-shown) {
-    border-color: var(--dark);
-    /* change the border color to indicate the textarea is not empty */
-  }
-
-  /* Show the placeholder on the bottom border */
-  textarea::placeholder {
-    font-family: "Quicksand";
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: var(--dark);
-  }
-
-  /* Show the placeholder inside the input elements */
-  input::placeholder {
-    position: absolute;
-    bottom: 4px;
-    left: 10px;
-    color: var(--dark);
-  }
-
-  /* Add spacing between the input elements */
-  input + input,
-  textarea + input,
-  input + textarea {
-    font-family: "Quicksand";
-    margin-top: 10px;
-  }
-
-  /* Hide the placeholder when the input elements are not empty */
-  input:not(:placeholder-shown),
-  textarea:not(:placeholder-shown) {
-    font-family: "Quicksand";
-    border-color: var(--bright);
-    /* change the border color to indicate the input elements are not empty */
   }
 }

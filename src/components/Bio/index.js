@@ -1,6 +1,7 @@
 import "./style.css";
 import React from "react";
 import about from "../../assets/images/about-me.png";
+import cv from "../../assets/images/CV.pdf";
 
 const Bio = () => {
   return (
@@ -22,7 +23,12 @@ const Bio = () => {
           JavaScript, Node.js and Github.
         </p>
         <div>
-          <a href="" target="_blank" rel="noopener noreferrer" className="btn">
+          <a
+            href={cv}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn"
+          >
             CV
           </a>
         </div>

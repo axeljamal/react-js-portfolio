@@ -1,7 +1,6 @@
 import "./style.css";
 import React from "react";
 import { Link } from "react-router-dom";
-import { faVialCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHtml5,
