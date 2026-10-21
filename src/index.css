@@ -70,3 +70,9 @@ NavPanel {
     display: hidden;
   }
 }
+
+.section-title {
+  text-align: center;
+  color: var(--dark);
+  margin: 6rem 0 2rem;
+}

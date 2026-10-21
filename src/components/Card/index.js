@@ -1,7 +1,6 @@
 import "./style.css";
 
 import React from "react";
-import { NavLink } from "react-router-dom";
 import Wrapper from "../Wrapper";
 
 function Card(props) {
@@ -15,12 +14,12 @@ function Card(props) {
         <div className="pro-details">
           <p> {props.details} </p>
           <div className="pro-btns">
-            <NavLink to={props.pageLink} className="button-56">
+            <a href={props.pageLink} target="_blank" rel="noopener noreferrer" className="button-56">
               View
-            </NavLink>
-            <NavLink to={props.sourceLink} className="button-56">
+            </a>
+            <a href={props.sourceLink} target="_blank" rel="noopener noreferrer" className="button-56">
               Source
-            </NavLink>
+            </a>
           </div>
         </div>
       </div>

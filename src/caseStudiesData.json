@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Bootcamp Connect",
+        "image": "images/bootcamp-connect.jpg",
+        "role": "Team project, 2026. Design system, accessibility and AI-assisted development",
+        "stack": ["Claude Code", "JavaScript", "Tailwind CSS", "Supabase", "PWA"],
+        "problem": "Bootcamp graduates need real experience to get hired, but most projects stop after demo day.",
+        "approach": "An installable app where software and business developers join real opportunities, run them as projects with a team chat, and earn verified experience. Built spec-first with Claude Code, to Apple's Human Interface Guidelines and WCAG 2.2 AA.",
+        "result": "Working alpha with Google sign-in, a ranked feed, AI-powered CV and LinkedIn import with a review step, browser tests and CI.",
+        "sourceLink": "https://github.com/jennyshenstudio/bootcamp-connect"
+    },
+    {
+        "name": "Windfall",
+        "image": "images/windfall.jpg",
+        "role": "Team prototype, 2026. Service and interaction design",
+        "stack": ["Prototype", "HTML", "CSS", "JavaScript"],
+        "problem": "Good food goes to waste while many people eat alone.",
+        "approach": "A clickable mobile prototype for small hosted suppers built around surplus food: discover a gathering, RSVP, host your own, with a trust and safety layer.",
+        "result": "Built to click through with stakeholders for a Brighton and Hove pilot."
+    },
+    {
+        "name": "3D product demo",
+        "role": "Team project. 25 commits",
+        "stack": ["Vue 3", "Vite", "Three.js"],
+        "problem": "Static product images do not let people explore a product.",
+        "approach": "An interactive 3D scene in the browser, built with Vue and Three.js.",
+        "result": "A responsive 3D experience that runs in any modern browser.",
+        "sourceLink": "https://github.com/austinslatey/vite-threeJs-demo"
+    }
+]

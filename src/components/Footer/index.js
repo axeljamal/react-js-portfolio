@@ -39,7 +39,7 @@ function Footer() {
           <FontAwesomeIcon className="icons" icon={faMobilePhone} />
         </a>
       </div>
-      <span>Created by Axel Jamal 2023</span>
+      <span>Created by Axel Jamal 2026</span>
     </footer>
   );
 }

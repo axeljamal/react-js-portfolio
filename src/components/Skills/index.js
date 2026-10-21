@@ -1,57 +1,54 @@
 import "./style.css";
 import React from "react";
 import { Link } from "react-router-dom";
+import {
+  faWandMagicSparkles,
+  faCube,
+  faDatabase,
+  faUniversalAccess,
+  faVialCircleCheck,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHtml5,
   faCss3,
   faReact,
+  faVuejs,
   faSquareJs,
   faNodeJs,
   faGithub,
+  faFigma,
 } from "@fortawesome/free-brands-svg-icons";
+
+const skills = [
+  { name: "Claude Code", icon: faWandMagicSparkles },
+  { name: "Figma", icon: faFigma },
+  { name: "React", icon: faReact },
+  { name: "Vue", icon: faVuejs },
+  { name: "JavaScript", icon: faSquareJs },
+  { name: "HTML", icon: faHtml5 },
+  { name: "CSS and Tailwind", icon: faCss3 },
+  { name: "Three.js", icon: faCube },
+  { name: "Node.js", icon: faNodeJs },
+  { name: "Supabase", icon: faDatabase },
+  { name: "Accessibility", icon: faUniversalAccess },
+  { name: "Testing", icon: faVialCircleCheck },
+  { name: "GitHub", icon: faGithub },
+];
 
 const Skills = () => {
   return (
     <div className="bottom">
-      <h1>Developer Skills</h1>
+      <h1>Skills</h1>
       <div className="skills">
-        <div className="skill">
-          <FontAwesomeIcon className="icons" icon={faHtml5} />
-          <div>
-            <p>HTML</p>
+        {skills.map((skill) => (
+          <div className="skill" key={skill.name}>
+            <FontAwesomeIcon className="icons" icon={skill.icon} />
+            <div>
+              <p>{skill.name}</p>
+            </div>
           </div>
-        </div>
-        <div className="skill">
-          <FontAwesomeIcon className="icons" icon={faCss3} />
-          <div>
-            <p>CSS</p>
-          </div>
-        </div>
-        <div className="skill">
-          <FontAwesomeIcon className="icons" icon={faSquareJs} />
-          <div>
-            <p>JavaScript</p>
-          </div>
-        </div>
-        <div className="skill">
-          <FontAwesomeIcon className="icons" icon={faReact} />
-          <div>
-            <p>React</p>
-          </div>
-        </div>
-        <div className="skill">
-          <FontAwesomeIcon className="icons" icon={faNodeJs} />
-          <div>
-            <p>Node.js</p>
-          </div>
-        </div>
-        <div className="skill">
-          <FontAwesomeIcon className="icons" icon={faGithub} />
-          <div>
-            <p>Github</p>
-          </div>
-        </div>
+        ))}
       </div>
       <div className="project-btn-container">
         <Link

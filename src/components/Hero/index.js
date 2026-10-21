@@ -7,18 +7,18 @@ function Hero() {
   return (
     <div className="hero">
       <div className="mask">
-        <img className="intro-img main-img" src={MainImg} alt="IntroImg" />
+        <img className="intro-img main-img" src={MainImg} alt="" />
       </div>
       <div className="content">
         <p>Axel Jamal</p>
-        <h1>Front-End Developer + Artist</h1>
+        <h1>Design Engineer + AI Creative Technologist</h1>
         <div>
           <Link
             to="/projects"
             className="btn"
             onClick={() => window.scrollTo(0, 0)}
           >
-            Projects
+            Case studies
           </Link>
 
           <a
