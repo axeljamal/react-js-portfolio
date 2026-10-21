@@ -2,7 +2,7 @@ import "./style.css";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../../assets/images/avatar.png";
+import logo from "../../assets/images/avatar-illustration.jpg";
 
 const Header = () => {
   // event listener to take user to page they clicked on
@@ -48,7 +48,7 @@ const Header = () => {
         </li>
 
         <div className="logo-container">
-          <img className="logo" src={logo} alt="avatar" />
+          <img className="logo" src={logo} alt="Illustrated portrait of Axel Jamal" />
         </div>
         <li>
           <Link
