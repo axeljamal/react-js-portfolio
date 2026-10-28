@@ -5,6 +5,7 @@ import { useState } from "react";
 
 function ContactForm() {
   const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -34,6 +35,8 @@ function ContactForm() {
     })
       .then((res) => res.json())
       .then((data) => {
+        if (!data.success) throw new Error(data.message);
+        setError(false);
         setSuccess(true);
         setFormData({
           ...formData,
@@ -47,7 +50,7 @@ function ContactForm() {
         }, 3000);
       })
 
-      .catch((err) => console.log(err));
+      .catch(() => setError(true));
   };
 
   return (
@@ -83,6 +86,11 @@ function ContactForm() {
         </form>
 
         {success && <p className="success">Form Submitted Successfully!</p>}
+        {error && (
+          <p className="error">
+            Something went wrong. Please email me at axeltaj@gmail.com instead.
+          </p>
+        )}
       </div>
 
       <div className="contactEnd">

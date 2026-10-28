@@ -24,7 +24,6 @@
         "stack": ["Vue 3", "Vite", "Three.js"],
         "problem": "Static product images do not let people explore a product.",
         "approach": "An interactive 3D scene in the browser, built with Vue and Three.js.",
-        "result": "A responsive 3D experience that runs in any modern browser.",
-        "sourceLink": "https://github.com/austinslatey/vite-threeJs-demo"
+        "result": "A responsive 3D experience that runs in any modern browser."
     }
 ]

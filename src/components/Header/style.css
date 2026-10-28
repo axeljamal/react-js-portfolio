@@ -52,7 +52,11 @@
 .hamburger {
   display: none;
   font-size: 2rem;
-  color: var(--secondary);
+  color: var(--dark);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }
 
 .content:hover,

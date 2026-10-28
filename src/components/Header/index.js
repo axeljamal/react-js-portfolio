@@ -1,5 +1,5 @@
 import "./style.css";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../../assets/images/avatar-illustration.jpg";
@@ -8,6 +8,7 @@ const Header = () => {
   // event listener to take user to page they clicked on
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
+  const closeMenu = () => setClick(false);
 
   // navbar color when scroll down
   const [color, setColor] = useState(false);
@@ -22,17 +23,18 @@ const Header = () => {
       setTextColor(false);
     }
   };
-  window.addEventListener("scroll", changeColor);
+  useEffect(() => {
+    window.addEventListener("scroll", changeColor);
+    return () => window.removeEventListener("scroll", changeColor);
+  }, []);
 
   return (
-    <div
-      className={color ? "panel-header panel-header-bg" : "panel-header"}
-      onClick={handleClick}
-    >
+    <div className={color ? "panel-header panel-header-bg" : "panel-header"}>
       <ul className={click ? "panel-menu active" : "panel-menu"}>
         <li>
           <Link
             className={textColor ? "content content-light" : "content"}
+            onClick={closeMenu}
             to="/"
           >
             HOME
@@ -41,6 +43,7 @@ const Header = () => {
         <li>
           <Link
             className={textColor ? "content content-light" : "content"}
+            onClick={closeMenu}
             to="/Projects"
           >
             PROJECTS
@@ -53,6 +56,7 @@ const Header = () => {
         <li>
           <Link
             className={textColor ? "content content-light" : "content"}
+            onClick={closeMenu}
             to="/About"
           >
             ABOUT
@@ -62,19 +66,22 @@ const Header = () => {
         <li>
           <Link
             className={textColor ? "content content-light" : "content"}
+            onClick={closeMenu}
             to="/Contact"
           >
             CONTACT
           </Link>
         </li>
       </ul>
-      <div className="hamburger" onClick={handleClick}>
-        {click ? (
-          <FaTimes size={20} style={{ color: "#ggg" }} />
-        ) : (
-          <FaBars size={20} style={{ color: "#ggg" }} />
-        )}
-      </div>
+      <button
+        type="button"
+        className="hamburger"
+        onClick={handleClick}
+        aria-label={click ? "Close menu" : "Open menu"}
+        aria-expanded={click}
+      >
+        {click ? <FaTimes size={20} /> : <FaBars size={20} />}
+      </button>
     </div>
   );
 };
