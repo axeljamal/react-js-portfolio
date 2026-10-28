@@ -1,6 +1,7 @@
 import "./style.css";
 import React from "react";
 import about from "../../assets/images/about-me.png";
+import cv from "../../assets/images/CV.pdf";
 
 const Bio = () => {
   return (
@@ -34,6 +35,14 @@ const Bio = () => {
             className="btn"
           >
             LinkedIn
+          </a>
+          <a
+            href={cv}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn"
+          >
+            CV
           </a>
         </div>
       </div>
