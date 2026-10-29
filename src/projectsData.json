@@ -42,7 +42,7 @@
     {
         "name": "Weather Dashboard",
         "image": "https://axeljamal.github.io/s-api-js-weather-dashboard/assets/images/screenshot.jpg",
-        "details": "Current weather and a 5-day forecast for any city from the OpenWeather API, with a responsive liquid glass design.",
+        "details": "Current weather and a 5-day forecast for any city from the OpenWeather API, with a live 3D weather scene, liquid glass design and an animated view of each API call.",
         "pageLink": "https://axeljamal.github.io/s-api-js-weather-dashboard/",
         "sourceLink": "https://github.com/axeljamal/s-api-js-weather-dashboard"
     }
